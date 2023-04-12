@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ICT GROUP WEBPAGE</title>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="myDiv">
+            <div class="navbar">
+                <img src="Official_Seal_of_Pangasinan_2017.jpg" class="logo">
+                <ul>
+                    <li><button1 type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/ict.html">Home</a></button1></li>
+                    <li><button1 type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/ictplaces.html">Places</a></button1></li>
+                    <li><button1 type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/ictculture.html">Culture</a></button1></li>
+                    <li><button1 type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/history.html">History</a></button1></li>
+                    <li><button1 type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/creators.html">Creators</a></button1></li>  
+                </ul>
+            </div>
+            <div class="banner">
+                <div class="form-box">
+                    <div class="button-box">
+                        <div id="btn"></div>
+                        <button type="button" class="toggle-btn" onclick="login()">Log in</button>
+                        <button type="button" class="toggle-btn" onclick="register()">Sign up</button>
+                    </div>
+                    <form id="login"class="input-group">
+                        <input type="text" class="input-field" placeholder="Use Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                        <button type="submit" class="submit-btn"><a href="file:///C:/Users/Dell/Desktop/ict%20web/Flightbooking.html?">Log in</a></button>
+                    </form>
+                    <form id="register"class="input-group">
+                        <input type="text" class="input-field" placeholder="Use Id" required>
+                        <input type="email" class="input-field" placeholder="Email Id" required>
+                        <input type="text" class="input-field" placeholder="Enter Password" required>
+                        <input type="checkbox" class="chech-box"><span>I agree to the terms & conditions</span>
+                        <button type="submit" class="submit-btn"><a href="file:///C:/Users/Dell/Desktop/ict%20web/Flightbooking.html?">Sign up</a></button>
+                    </form>
+                </div>
+            </div>
+            <script>
+                var x = document.getElementById("login");
+                var y = document.getElementById("register");
+                var z = document.getElementById("btn");
+
+                function register(){
+                    x.style.left = "-400px";
+                    y.style.left = "50px";
+                    z.style.left = "110px";
+                }
+                function login(){
+                    x.style.left = "50px";
+                    y.style.left = "450px";
+                    z.style.left = "0px";
+                }
+            </script>
+        </body>
+</html>
