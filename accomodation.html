@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="accomodation.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+
+  <section class="head">
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Pangasinan, Philippines</span>
+      </div>
+    </div>
+  </section>
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Accomodation</h1>
+      <p>Discover the place where you have fun & enjoy a lot</p>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="heading">
+        <h5>EXPLORE</h5>
+        <h2>We are cool to give you pleasure
+        </h2>
+      </div>
+
+      <div class="content flex  top">
+        <div class="left">
+          <h3>As much as comfort want to get from us everything
+          </h3>
+          <p>We gladly wellcome you to our accomodations website and hopefully enjoy scrolling down and possibly apply to our hotels!</p>
+        </div>
+        <div class="right">
+          <img src="a.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="wrapper">
+    <div class="container">
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="wrapper2">
+  </section>
+
+
+  <section class="room wrapper2 top" id="room">
+    <div class="container">
+      <div class="heading">
+        <h5>OUR ROOMS</h5>
+        <h2>Fascinating rooms & suites that comes with...</h2>
+      </div>
+      <div class="content flex mtop">
+        <div class="left grid2">
+          <div class="box">
+            <i class="fas fa-desktop"></i>
+            <p>Free Cost</p>
+            <h3>No booking fee</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-dollar-sign"></i>
+            <p>Free Cost</p>
+            <h3>Best rate guarantee</h3>
+          </div>
+          <div class="box">
+            <i class="fab fa-resolving"></i>
+            <p>Free Cost</p>
+            <h3>Reservations 24/7</h3>
+          </div>
+          <div class="box">
+            <i class="fal fa-alarm-clock"></i>
+            <p>Free Cost</p>
+            <h3>High-speed Wi-Fi</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-mug-hot"></i>
+            <p>Free Cost</p>
+            <h3>Free breakfast</h3>
+          </div>
+          <div class="box">
+            <i class="fas fa-user-tie"></i>
+            <p>Free Cost</p>
+            <h3>One person free</h3>
+          </div>
+        </div>
+        <div class="right">
+          <img src="r.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timer about wrapper">
+    <div class="background"> </div>
+    <div class="container">
+      <div class="heading">
+        <h5>LAST MINUTE!</h5>
+        <h2> <span>Incredible!</span> Are you coming today</h2>
+      </div>
+
+      <div id="time" class="flex1 mtop"> </div>
+    </div>
+  </section>
+  <script src="accomodation.js" charset="utf-8"></script>
+  <script src="accomodation.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $('#time').countdown('2024/01/01', function(event) {
+      $(this).html(event.strftime(
+        '<div class="clock"><span>%d</span> <p>Days</p></div> ' +
+        '<div class="clock"><span>%H</span> <p>Hours</p></div> ' +
+        '<div class="clock"><span>%M</span> <p>Minutes</p></div> ' +
+        '<div class="clock"><span>%S</span> <p>Seconds</p></div> '
+      ));
+    });
+  </script>
+
+
+  <section class="offer mtop" id="services">
+    <div class="container">
+      <div class="heading">
+        <h5>EXCLUSIVE OFFERS </h5>
+        <h3>You can get an exclusive offer </h3>
+      </div>
+
+      <div class="content grid2 mtop">
+        <div class="box flex">
+          <div class="left">
+            <img src="o1.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Single Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>A room perfect for 1 person.</p>
+            <h5>From P1,000/night</h5>
+            <button class="flex1"><a href="file:///C:/Users/Dell/Desktop/ict%20web/singleroom.html"><span>Check Availability</span></a><i class="fas fa-arrow-circle-right"></i></button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="o2.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Double Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>A room perfect for 2 people, may come in single bed or double bed.</p>
+            <h5>From P2,000/night</h5>
+            <button class="flex1"><a href="file:///C:/Users/Dell/Desktop/ict%20web/doubleroom.html"><span>Check Availability</span></a><i class="fas fa-arrow-circle-right"></i></button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="o3.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4>Deluxe Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>A room with more space and comfort like your own home. </p>
+            <h5>From P2,500/night</h5>
+            <button class="flex1"><a href="file:///C:/Users/Dell/Desktop/ict%20web/deluxeroom.html"><span>Check Availability</span></a><i class="fas fa-arrow-circle-right"></i></button>
+          </div>
+        </div>
+        <div class="box flex">
+          <div class="left">
+            <img src="o4.jpg" alt="">
+          </div>
+          <div class="right">
+            <h4> Family Room</h4>
+            <div class="rate flex">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p> A room perfect for a family.</p>
+            <h5>From P2,750/night</h5>
+            <button class="flex1"><a href="file:///C:/Users/Dell/Desktop/ict%20web/familyroom.html"><span>Check Availability</span></a><i class="fas fa-arrow-circle-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="offer2 about wrapper timer top" id="shop">
+    
+  </section>
+  <section class="customer top" id="testimonials">
+    <div class="container">
+      <div class="heading">
+        <h5>TESTIMONIALS </h5>
+        <h3>What customers say </h3>
+      </div>
+
+      <div class="owl-carousel owl-theme mtop">
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Absolutely Stunning</h3>
+          <p>I'm super happy with my stay although it was brief. The staff is truly phenomenal. Love it!</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="c1.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Pam Pangga A. sim</h3>
+              <span>Costomer</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Love it!</h3>
+          <p>Room is very spacious with good lighting. Hot and cold shower with omplee toiletries. They also have a smart tv where you can NETFLIX AND CHILL. Staff are caurteous and accommodating</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="c2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Rich Frod Magdigma</h3>
+              <span>Costomer</span>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="rate">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Good!</h3>
+          <p>Very Good!</p>
+          <div class="admin flex">
+            <div class="img">
+              <img src="c3.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>Saber Land Biseril</h3>
+              <span>Costomer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      navText: ["<i class='far fa-long-arrow-alt-left'></i>", "<i class='far fa-long-arrow-alt-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+  <section class="gallary top" id="gallary">
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g4.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g5.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g1.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g2.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+      <div class="item">
+        <img src="g3.jpg" alt="">
+        <div class="overlay">
+          <i class="fab fa-instagram"></i>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      slideTransition: 'linear',
+      autoplayTimeout: 4000,
+      autoplaySpeed: 4000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 3
+        },
+        1000: {
+          items: 5
+        }
+      }
+    })
+  </script>
+
+
+  <section class="blog top" id="blog">
+  </section>
+
+
+
+
+
+
+</body>
+
+
+</html>

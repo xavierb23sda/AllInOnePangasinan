@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Hotel Booking Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="accomoform.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+</head>
+
+<body>
+
+  <section class="head">
+      <div class="address">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>Pangasinan, Philippines</span>
+      </div>
+    </div>
+  </section>
+  <section class="home" id="home">
+    <div class="container">
+      <h1>Accomodation</h1>
+      <p>Discover the place where you have fun & enjoy a lot</p>
+      <div class="content grid">
+        <div class="box">
+          <span>FIRST NAME </span> <br>
+          <input type="text" placeholder="First Name">
+        </div>
+        <div class="box">
+          <span>MIDDLE NAME </span> <br>
+          <input type="text" placeholder="Middle Name">
+        </div>
+        <div class="box">
+          <span>LAST NAME</span> <br>
+          <input type="text" placeholder="Last Name">
+        </div>
+        <div class="box">
+            <span>GMAIL</span> <br>
+            <input type="email" placeholder="Gmail">
+          </div>
+        <div class="box">
+            <span>CONTACT NUMBER</span> <br>
+            <input type="text" placeholder="Contact Number">
+        </div>
+      </div>
+      <div class="content grid">
+        <div class="box">
+          <span>ARRIVAL DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>DEPARTURE DATE </span> <br>
+          <input type="date" placeholder="29/20/2021">
+        </div>
+        <div class="box">
+          <span>NUMBER OF GUEST</span> <br>
+          <form name="frm-pin" method="post" action="pin-index-a.php">
+            <input type="hidden" name="mode" value="PinRequest" />
+            <select name="tot_pin_requested" onchange="calculateAmount(this.value)" required>
+                <option value="" disabled selected>Choose an option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div class="box">
+            <span>TOTAL AMOUNT IN PHP</span> <br>
+            <input class="w3-input w3-border" name="tot_amount" id="tot_amount" type="text" readonly>
+          </div>
+        <div class="box">
+          <button type="button"><a href="file:///C:/Users/Dell/Desktop/ict%20web/checkout.html">Submit</a></button>
+        </div>
+            <script>
+                function calculateAmount(val) {
+                    var tot_price = val * 2750;
+                    /*display the result*/
+                    var divobj = document.getElementById('tot_amount');
+                    divobj.value = tot_price;
+                }
+            </script>
+      </div>
+    </div>
